@@ -4,12 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7d2b4574-8a78-45cf-b4ef-208bdd511df8" name="Changes" comment="">
+    <list default="true" id="7d2b4574-8a78-45cf-b4ef-208bdd511df8" name="Changes" comment="Initial Commit">
       <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/parser_stroyoz-master.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/parser_stroyoz-master.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parce_xlsx/Akson.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parce_xlsx/Oz_Saturn.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parce_xlsx/Petrovich.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parce_xlsx/carts_discont.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parce_xlsx/carts_famarket.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parce_xlsx/carts_grandline.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parce_xlsx/carts_otvinta.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parce_xlsx/carts_stroimaks.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parce_xlsx/carts_stroyoz.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parce_xlsx/carts_vertical.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parce_xlsx/carts_vsksnab.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parce_xlsx/dvoroz.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parce_xlsx/grmsd.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parce_xlsx/msk_Saturn.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parce_xlsx/sdvor.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parce_xlsx/stroydomsale.xlsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/env_old/bin/Activate.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/env_old/bin/Activate.ps1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/env_old/bin/LICENSE.chromedriver" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/env_old/bin/activate" beforeDir="false" afterPath="$PROJECT_DIR$/env_old/bin/activate" afterDir="false" />
@@ -1577,26 +1593,39 @@
       <change beforePath="$PROJECT_DIR$/env_old/lib/python3.8/site-packages/wsproto/typing.py" beforeDir="false" afterPath="$PROJECT_DIR$/env_old/lib/python3.8/site-packages/wsproto/typing.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/env_old/lib/python3.8/site-packages/wsproto/utilities.py" beforeDir="false" afterPath="$PROJECT_DIR$/env_old/lib/python3.8/site-packages/wsproto/utilities.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/env_old/pyvenv.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/env_old/pyvenv.cfg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html_startPage/discont.html" beforeDir="false" afterPath="$PROJECT_DIR$/html_startPage/discont.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html_startPage/index_cat.html" beforeDir="false" afterPath="$PROJECT_DIR$/html_startPage/index_cat.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html_startPage/otvin.html" beforeDir="false" afterPath="$PROJECT_DIR$/html_startPage/otvin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/start_parce/Akson.py" beforeDir="false" afterPath="$PROJECT_DIR$/start_parce/Akson.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/start_parce/Petrovich.py" beforeDir="false" afterPath="$PROJECT_DIR$/start_parce/Petrovich.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/start_parce/conver.py" beforeDir="false" afterPath="$PROJECT_DIR$/start_parce/conver.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/start_parce/dvoroz.py" beforeDir="false" afterPath="$PROJECT_DIR$/start_parce/dvoroz.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/start_parce/grandline.py" beforeDir="false" afterPath="$PROJECT_DIR$/start_parce/grandline.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/start_parce/grmsd.py" beforeDir="false" afterPath="$PROJECT_DIR$/start_parce/grmsd.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/start_parce/maxidom.py" beforeDir="false" afterPath="$PROJECT_DIR$/start_parce/maxidom.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/start_parce/msk_saturn.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/start_parce/oz-saturn.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/start_parce/parce_discont.py" beforeDir="false" afterPath="$PROJECT_DIR$/start_parce/parce_discont.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/start_parce/parce_otvinta.py" beforeDir="false" afterPath="$PROJECT_DIR$/start_parce/parce_otvinta.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/start_parce/parce_staroyoz.py" beforeDir="false" afterPath="$PROJECT_DIR$/start_parce/parce_staroyoz.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/start_parce/sdvor.py" beforeDir="false" afterPath="$PROJECT_DIR$/start_parce/sdvor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/start_parce/stroydomsale.py" beforeDir="false" afterPath="$PROJECT_DIR$/start_parce/stroydomsale.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/start_parce/tes.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/start_parce/writing.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/exit/errors.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/exit/errors1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/exit/errors3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/exit/errors4.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/exit/pars_stat.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/exit/pars_stat1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/exit/pars_stat2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/exit/pars_stat3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/exit/pars_stat4.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/exit/pars_stat_detail.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/exit/pars_stat_detail1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/exit/pars_stat_detail4.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html_startPage/discont.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html_startPage/index_cat.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html_startPage/otvin.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resul_parce/Akson.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resul_parce/Oz_Saturn.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resul_parce/Petrovich.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resul_parce/carts_discont.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resul_parce/carts_famarket.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resul_parce/carts_grandline.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resul_parce/carts_otvinta.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resul_parce/carts_stroimaks.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resul_parce/carts_stroyoz.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resul_parce/carts_vertical.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resul_parce/carts_vsksnab.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resul_parce/dvoroz.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resul_parce/grmsd.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resul_parce/maxidom.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resul_parce/msk_Saturn.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resul_parce/sdvor.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resul_parce/stroydomsale.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/start_parce/ChromeDriver/chromedriver" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -1617,14 +1646,10 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/Users/artem/Desktop/parser_stroyoz-master",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
-  }
-}]]></component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/start_parce" />
@@ -1636,7 +1661,7 @@
       <recent name="$PROJECT_DIR$/env_old/bin" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Petrovich">
+  <component name="RunManager">
     <configuration name="Akson" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="parser_stroyoz-master" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -1764,15 +1789,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Python.Petrovich" />
-        <item itemvalue="Python.conver" />
-        <item itemvalue="Python.writing" />
-        <item itemvalue="Python.oz-saturn" />
-        <item itemvalue="Python.Akson" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -1783,21 +1799,30 @@
       <option name="presentableId" value="Default" />
       <updated>1676877115613</updated>
       <workItem from="1676877117775" duration="1310000" />
+      <workItem from="1687345906815" duration="1491000" />
     </task>
+    <task id="LOCAL-00001" summary="Initial Commit">
+      <created>1684502032918</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1684502032918</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Initial Commit">
+      <created>1687349135838</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1687349135838</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <default-breakpoints>
-        <breakpoint type="python-exception">
-          <properties notifyOnTerminate="true" exception="BaseException">
-            <option name="notifyOnTerminate" value="true" />
-          </properties>
-        </breakpoint>
-      </default-breakpoints>
-    </breakpoint-manager>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit" />
   </component>
 </project>
