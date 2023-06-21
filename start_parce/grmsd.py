@@ -33,15 +33,39 @@ for item in tqdm(list_cat_url):
     count += 1
     print(f"Обработка {count} каталога ")
 
-    # найти последнее значение в пагинации
-    pages_count = int(soup.find("div", class_="nums").find_all("a")[-1].text)
-    # цикл по пагинации
-    for i in range(1, pages_count + 1):
-        url_page = f"{item['url_cat']}?PAGEN_1={i}"
+    if soup.find("div", class_="nums"):
 
-        req = requests.get(url_page, headers=headers)
-        soup = BeautifulSoup(req.text, "lxml")
+        # найти последнее значение в пагинации
+        pages_count = int(soup.find("div", class_="nums").find_all("a")[-1].text)
+        # цикл по пагинации
+        for i in range(1, pages_count + 1):
+            url_page = f"{item['url_cat']}?PAGEN_1={i}"
 
+            req = requests.get(url_page, headers=headers)
+            soup = BeautifulSoup(req.text, "lxml")
+
+            link_products_list = soup.find_all('div', 'item_block')
+            for item_cart in link_products_list:
+                try:
+                    url = "https://grmsd.ru" + item_cart.find('a', class_="font_sm").get('href')
+                except Exception:
+                    url = 'none'
+                try:
+                    name = item_cart.find('a', class_="font_sm").find("span").getText()
+                except Exception:
+                    name = 'none'
+                try:
+                    price = item_cart.find('span', class_="price_value").getText()
+                except Exception:
+                    price = 'none' # Цены нет, если нет в наличие
+
+                carts.append({
+                    "url": f"{url}",
+                    "name": name,
+                    "price": price,
+                })
+
+    else :
         link_products_list = soup.find_all('div', 'item_block')
         for item_cart in link_products_list:
             try:
@@ -63,5 +87,5 @@ for item in tqdm(list_cat_url):
                 "price": price,
             })
 # print(carts)
-with open("../resul_parce/carts_grmsd.json", "w", encoding="utf-8") as file:
+with open("/Users/artem/Desktop/parser_stroyoz-master/resul_parce/grmsd.json", "w", encoding="utf-8") as file:
     json.dump(carts, file, indent=4, ensure_ascii=False)

@@ -17,8 +17,8 @@ headers = {
 req = requests.get(url, headers=headers)
 soup = BeautifulSoup(req.text, "lxml")
 
-with open("html_startPage/discont.html", "w") as file:
-    file.write(req.text)
+# with open("html_startPage/discont.html", "w") as file:
+#     file.write(req.text)
 
 list_catigories_1lv = soup.find_all('a', class_="popular_item")
 for item in tqdm(list_catigories_1lv):
@@ -56,7 +56,7 @@ for item in tqdm(list_catigories_1lv):
     # print(f"Обрабатываю раздел 1-ого уровня {item.get('href')}")
 
 #print(carts)
-with open("resul_parce/carts_discont.json", "w") as file:
+with open("/Users/artem/Desktop/parser_stroyoz-master/resul_parce/carts_discont.json", "w") as file:
     json.dump(carts, file, indent=4, ensure_ascii=False)
 
 print("--- %s seconds ---" % (time.time() - start_time))

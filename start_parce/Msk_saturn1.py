@@ -166,6 +166,7 @@ while True:
             is_file_exist = carts(soup_subsection, url_section, is_file_exist)
 
         print("--- %s seconds ---" % (time.time() - start_time))
+        break
     except:
         errors = {
             "error": "Была ошибка",
