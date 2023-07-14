@@ -57,7 +57,7 @@ def cart(carts, url, is_file_exist):
                 'price': price_cart.replace('\n', '').replace(' ', ''),
             })
 
-        with open("/Users/artem/Desktop/parser_stroyoz-master/resul_parce/carts_otvinta.json", "a", encoding="utf-8") as file:
+        with open("../resul_parce/carts_otvinta.json", "a", encoding="utf-8") as file:
             json.dump(carts_item, file, indent=4, ensure_ascii=False)
 
 
@@ -83,7 +83,7 @@ while True:
 
         #
         try:
-            with open("/Users/artem/Desktop/parser_stroyoz-master/exit/pars_stat3.json") as file:
+            with open("../exit/pars_stat3.json") as file:
                 d = json.load(file)
                 file.close()
                 is_file_exist1 = True
@@ -98,7 +98,7 @@ while True:
 
         #
         try:
-            with open("/Users/artem/Desktop/parser_stroyoz-master/exit/pars_stat_detail3.json") as file:
+            with open("../exit/pars_stat_detail3.json") as file:
                 p = json.load(file)
                 file.close()
                 is_file_exist = True
@@ -126,7 +126,7 @@ while True:
             status_pars = {
                 "1lvl": sect,
             }
-            with open("/Users/artem/Desktop/parser_stroyoz-master/exit/pars_stat3.json", "w") as file:
+            with open("../exit/pars_stat3.json", "w") as file:
                 json.dump(status_pars, file, indent=4, ensure_ascii=False)
 
 
@@ -151,7 +151,7 @@ while True:
                     "1lvl": sect,
                     "2lvl": url_subsection_lv1,
                 }
-                with open("/Users/artem/Desktop/parser_stroyoz-master/exit/pars_stat3.json", "w") as file:
+                with open("../exit/pars_stat3.json", "w") as file:
                     json.dump(status_pars, file, indent=4, ensure_ascii=False)
 
                 browser.get(url_subsection)  # Запрос на получение страницы раздела верхнего уровня
@@ -177,7 +177,7 @@ while True:
                             "2lvl": url_subsection_lv1,
                             "3lvl": url_subsection_lv2,
                         }
-                        with open("/Users/artem/Desktop/parser_stroyoz-master/exit/pars_stat3.json", "w") as file:
+                        with open("../exit/pars_stat3.json", "w") as file:
                             json.dump(status_pars, file, indent=4, ensure_ascii=False)
 
                         browser.get(url_subsection2)  # Запрос на получение страницы раздела верхнего уровня
@@ -202,7 +202,7 @@ while True:
                                     "3lvl": url_subsection_lv2,
                                     "4lvl": url_subsection_lv3,
                                 }
-                                with open("/Users/artem/Desktop/parser_stroyoz-master/exit/pars_stat3.json", "w") as file:
+                                with open("../exit/pars_stat3.json", "w") as file:
                                     json.dump(status_pars, file, indent=4, ensure_ascii=False)
 
                                 browser.get(url_subsection3)  # Запрос на получение страницы раздела верхнего уровня
@@ -227,5 +227,5 @@ while True:
         errors = {
             "error": "Была ошибка",
         }
-        with open("/Users/artem/Desktop/parser_stroyoz-master/exit/errors3.json", "a", encoding='utf-8') as file:
+        with open("../exit/errors3.json", "a", encoding='utf-8') as file:
             json.dump(errors, file, indent=4, ensure_ascii=False)

@@ -55,5 +55,5 @@ for item in tqdm(list_cat_url):
     })
 #     print(carts)
 # print(carts)
-with open("/Users/artem/Desktop/parser_stroyoz-master/resul_parce/dvoroz.json", "w") as file:
+with open("../resul_parce/dvoroz.json", "w") as file:
         json.dump(carts, file, indent=4, ensure_ascii=False)

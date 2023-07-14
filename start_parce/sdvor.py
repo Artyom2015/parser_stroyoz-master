@@ -57,7 +57,7 @@ while True:
 
         #
         try:
-            with open("/Users/artem/Desktop/parser_stroyoz-master/exit/pars_stat2.json") as file:
+            with open("../exit/pars_stat2.json") as file:
                 d = json.load(file)
                 file.close()
                 is_file_exist1 = True
@@ -66,7 +66,7 @@ while True:
 
         #
         try:
-            with open("/Users/artem/Desktop/parser_stroyoz-master/exit/pars_stat_detail5.json") as file:
+            with open("../exit/pars_stat_detail5.json") as file:
                 p = json.load(file)
                 file.close()
                 is_file_exist = True
@@ -92,7 +92,7 @@ while True:
             status_pars = {
                 "1lvl": section_pages,
             }
-            with open("/Users/artem/Desktop/parser_stroyoz-master/exit/pars_stat2.json", "w") as file:
+            with open("../exit/pars_stat2.json", "w") as file:
                 json.dump(status_pars, file, indent=4, ensure_ascii=False)
 
             browser.get(section_pages)
@@ -134,7 +134,7 @@ while True:
                     # "pagen": i,
                     "carts_url": carts_url,
                 }
-                with open("/Users/artem/Desktop/parser_stroyoz-master/exit/pars_stat_detail5.json", "w") as file:
+                with open("../exit/pars_stat_detail5.json", "w") as file:
                     json.dump(status_pars_detail, file, indent=4, ensure_ascii=False)
 
                 try:
@@ -162,7 +162,7 @@ while True:
 
         # except Exception as e: print(e)
 
-        with open("/Users/artem/Desktop/parser_stroyoz-master/resul_parce/sdvor.json", "w", encoding="utf-8") as file:
+        with open("../resul_parce/sdvor.json", "w", encoding="utf-8") as file:
             json.dump(carts, file, indent=4, ensure_ascii=False)
 
         end = time.time() - start_time ## собственно время работы программы
@@ -172,5 +172,5 @@ while True:
         errors = {
             "error": "Была ошибка",
         }
-        with open("/Users/artem/Desktop/parser_stroyoz-master/exit/errors2.json", "a", encoding='utf-8') as file:
+        with open("../exit/errors2.json", "a", encoding='utf-8') as file:
             json.dump(errors, file, indent=4, ensure_ascii=False)

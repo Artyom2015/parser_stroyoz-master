@@ -11,7 +11,7 @@ api = "https://api.petrovich.ru/catalog/v2.3/sections/"#12101?offset=20&limit=20
 browser = webdriver.Chrome()
 
 def load_cart(iterator, section):
-    time.sleep(1)
+    time.sleep(4)
     browser.get(f"{api}{section}?offset={iterator}&city_code=msk&client_id=pet_site")
     stst = True
 
@@ -26,19 +26,21 @@ def load_cart(iterator, section):
                 name = item['title']
                 price = item['price']['retail']
 
-                cart.append({
+                cart.append ({
                     "url": "API use",
                     "name": name,
                     "price": price,
                 })
+                
                 stst = False
-        except Exception:
-            time.sleep(5)
+                
+        except Exception as e:
+            time.sleep(15)
             browser.get(url)
             browser.refresh()
             browser.get(f"{api}{section}?offset={iterator}&city_code=msk&client_id=pet_site")
             print(f"Error in {section}")
-            
+            print(e)
 
 browser.get(f"{url}/catalog")
 cart = []
@@ -70,7 +72,7 @@ for section in sections:
                 json_re = json.loads(json_re)
                 keke = False
             except Exception:
-                time.sleep(5)
+                time.sleep(15)
                 browser.get(url)
                 browser.refresh()
                 browser.get(f"{api}{api_section}?offset=0&city_code=msk&client_id=pet_site")
@@ -84,5 +86,5 @@ for section in sections:
         print(f"Done subsection code {api_section}")
     print(f"Done!!!! {section_url}")
         
-with open("/Users/artem/Desktop/parser_stroyoz-master/resul_parce/Petrovich.json", "w", encoding="utf-8") as file:
+with open("../resul_parce/Petrovich1.json", "w", encoding="utf-8") as file:
     json.dump(cart, file, indent=4, ensure_ascii=False)

@@ -51,7 +51,7 @@ def carts(car, url, is_file_exist):
             # "pagen": i,
             "detail_url": f"{detail_url}",
         }
-        with open("/Users/artem/Desktop/parser_stroyoz-master/exit/pars_stat_detail1.json", "w") as file:
+        with open("../exit/pars_stat_detail1.json", "w") as file:
             json.dump(status_pars_detail, file, indent=4, ensure_ascii=False)
 
         browser.get(url=f"https://oz.saturn.net{detail_url}")
@@ -94,7 +94,7 @@ def carts_items(car_item):
         "price": price.replace('Ä', ' ').replace('\n', ' ').replace('\t', ' ').replace(' ', '').replace('штм', 'шт').strip(),
     })
 
-    with open("/Users/artem/Desktop/parser_stroyoz-master/resul_parce/Oz_Saturn.json", "a", encoding="utf-8") as file:
+    with open("../resul_parce/Oz_Saturn.json", "a", encoding="utf-8") as file:
         json.dump(carts, file, indent=4, ensure_ascii=False)
 
 
@@ -121,7 +121,7 @@ while True:
 
         #
         try:
-            with open("/Users/artem/Desktop/parser_stroyoz-master/exit/pars_stat1.json") as file:
+            with open("../exit/pars_stat1.json") as file:
                 d = json.load(file)
                 file.close()
                 is_file_exist1 = True
@@ -130,7 +130,7 @@ while True:
 
         #
         try:
-            with open("/Users/artem/Desktop/parser_stroyoz-master/exit/pars_stat_detail1.json") as file:
+            with open("../exit/pars_stat_detail1.json") as file:
                 p = json.load(file)
                 file.close()
                 is_file_exist = True
@@ -155,7 +155,7 @@ while True:
             status_pars = {
                 "1lvl": url_p_section,
             }
-            with open("/Users/artem/Desktop/parser_stroyoz-master/exit/pars_stat1.json", "w") as file:
+            with open("../exit/pars_stat1.json", "w") as file:
                 json.dump(status_pars, file, indent=4, ensure_ascii=False)
 
 
@@ -171,6 +171,6 @@ while True:
         errors = {
             "error": "Была ошибка",
         }
-        with open("/Users/artem/Desktop/parser_stroyoz-master/exit/errors1.json", "a", encoding='utf-8') as file:
+        with open("../exit/errors1.json", "a", encoding='utf-8') as file:
             json.dump(errors, file, indent=4, ensure_ascii=False)
 

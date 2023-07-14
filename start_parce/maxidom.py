@@ -1,5 +1,6 @@
 import requests
 import json
+from os import path
 import time
 from bs4 import BeautifulSoup
 import re
@@ -57,7 +58,7 @@ def cart(carts, url, is_file_exist):
                 "pagen": i,
                 "carts_url": f"{carts_url}",
             }
-            with open("/Users/artem/Desktop/parser_stroyoz-master/exit/pars_stat_detail4.json", "w") as file:
+            with open("../exit/pars_stat_detail4.json", "w") as file:
                 json.dump(status_pars_detail, file, indent=4, ensure_ascii=False)
 
             req = requests.get(detail_url, headers=headers)
@@ -82,8 +83,14 @@ def carts_items(car_item, detail_url, price_cart):
         'price': price_cart.replace('\n', '').replace(' ', ''), #.replace('\n', '').replace(' ', '')
     })
 
-    with open("/Users/artem/Desktop/parser_stroyoz-master/resul_parce/maxidom.json", "a", encoding="utf-8") as file:
+    with open("../resul_parce/maxidom.json", "a", encoding="utf-8") as file:
+        # lst = file.readlines()
+        # lst = [string.replace("][", "").replace("}", "},").strip() for string in lst]
+        # tr = json.load(file)
+        # gt = tr.readlines()
         json.dump(carts_item, file, indent=4, ensure_ascii=False)
+        file.close
+
 
 while True:
     try:
@@ -102,7 +109,7 @@ while True:
 
         #
         try:
-            with open("/Users/artem/Desktop/parser_stroyoz-master/exit/pars_stat4.json") as file:
+            with open("../exit/pars_stat4.json") as file:
                 d = json.load(file)
                 file.close()
                 is_file_exist1 = True
@@ -117,7 +124,7 @@ while True:
 
         #
         try:
-            with open("/Users/artem/Desktop/parser_stroyoz-master/exit/pars_stat_detail4.json") as file:
+            with open("../exit/pars_stat_detail4.json") as file:
                 p = json.load(file)
                 file.close()
                 is_file_exist = True
@@ -141,7 +148,7 @@ while True:
                 status_pars = {
                     "1lvl": sect,
                 }
-                with open("/Users/artem/Desktop/parser_stroyoz-master/exit/pars_stat4.json", "w") as file:
+                with open("../exit/pars_stat4.json", "w") as file:
                     json.dump(status_pars, file, indent=4, ensure_ascii=False)
 
                 print(url_section)
@@ -168,7 +175,7 @@ while True:
                         "1lvl": sect,
                         "2lvl": url_subsection_lv1,
                     }
-                    with open("/Users/artem/Desktop/parser_stroyoz-master/exit/pars_stat4.json", "w") as file:
+                    with open("../exit/pars_stat4.json", "w") as file:
                         json.dump(status_pars, file, indent=4, ensure_ascii=False)
 
                     print(url_subsection)
@@ -187,7 +194,7 @@ while True:
         errors = {
             "error": "Была ошибка",
         }
-        with open("/Users/artem/Desktop/parser_stroyoz-master/exit/errors4.json", "a", encoding='utf-8') as file:
+        with open("../exit/errors4.json", "a", encoding='utf-8') as file:
             json.dump(errors, file, indent=4, ensure_ascii=False)
 
         # python maxidom.py

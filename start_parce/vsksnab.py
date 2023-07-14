@@ -23,12 +23,14 @@ pages_count = int(soup.find("ul", class_="page-numbers").find_all("a", class_="p
 # цикл по пагинации
 for i in range(1, pages_count + 1):
     url_page = f"{url}page/{i}/"
-
+    print(url_page)
     req = requests.get(url_page, headers=headers)
     soup = BeautifulSoup(req.text, "lxml")
 
     link_products_list = soup.find_all('li', 'type-product')
     for item_cart in link_products_list:
+        count += 1
+        print(count)
         try:
             url = url + item_cart.find('a', class_="woocommerce-LoopProduct-link").get('href')
         except Exception:
@@ -49,6 +51,6 @@ for i in range(1, pages_count + 1):
             "price": price.group(0),
         })
     time.sleep(5)
-print(carts)
-with open("/Users/artem/Desktop/parser_stroyoz-master/resul_parce/carts_vsksnab.json", "w", encoding="utf-8") as file:
+# print(carts)
+with open("../resul_parce/carts_vsksnab.json", "w", encoding="utf-8") as file:
     json.dump(carts, file, indent=4, ensure_ascii=False)

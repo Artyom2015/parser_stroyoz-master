@@ -79,7 +79,7 @@ for item in tqdm(all_catigories_1lvl_list):
 
     i += 1
 #print(carts_arr)
-with open("/Users/artem/Desktop/parser_stroyoz-master/resul_parce/carts_stroyoz.json", "w") as file:
+with open("../resul_parce/carts_stroyoz.json", "w") as file:
     json.dump(carts_arr, file, indent=4, ensure_ascii=False)
 #print(all_catigories_1lvl_list)
 print("--- %s seconds ---" % (time.time() - start_time))

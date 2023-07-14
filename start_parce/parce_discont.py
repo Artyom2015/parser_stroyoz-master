@@ -56,7 +56,7 @@ for item in tqdm(list_catigories_1lv):
     # print(f"Обрабатываю раздел 1-ого уровня {item.get('href')}")
 
 #print(carts)
-with open("/Users/artem/Desktop/parser_stroyoz-master/resul_parce/carts_discont.json", "w") as file:
+with open("../resul_parce/carts_discont.json", "w") as file:
     json.dump(carts, file, indent=4, ensure_ascii=False)
 
 print("--- %s seconds ---" % (time.time() - start_time))

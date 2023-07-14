@@ -174,7 +174,7 @@ section(list_cat_url)
 #     req = requests.get(item['url_cat'], headers=headers)
 #     soup = BeautifulSoup(req.text, "lxml")
 
-with open("/Users/artem/Desktop/parser_stroyoz-master/resul_parce/Akson.json", "w", encoding="utf-8") as file:
+with open("../resul_parce/Akson.json", "w", encoding="utf-8") as file:
     json.dump(carts, file, indent=4, ensure_ascii=False)
 
 end = time.time() - start_time ## собственно время работы программы

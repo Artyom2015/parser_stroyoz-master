@@ -95,5 +95,5 @@ for item in tqdm(list_cat_url):
                 "price": price.group(0),
             })
 # print(carts)
-with open("/Users/artem/Desktop/parser_stroyoz-master/resul_parce/carts_stroimaks.json", "w", encoding="utf-8") as file:
+with open("../resul_parce/carts_stroimaks.json", "w", encoding="utf-8") as file:
     json.dump(carts, file, indent=4, ensure_ascii=False)
